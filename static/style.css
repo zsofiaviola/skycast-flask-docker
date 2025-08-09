@@ -1,0 +1,57 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif; /* Main font style */
+    background: linear-gradient(to right, #87CEFA, #4682B4); /* Light blue to darker blue gradient */
+    color: white; /* White text color for better contrast */
+    text-align: center; /* Center all text */
+    margin: 0; /* Remove default body margin */
+}
+
+/* Main container for the app content */
+.container {
+    padding: 20px; /* Space inside the container */
+}
+
+/* Styling for input fields and buttons */
+input, button {
+    padding: 10px; /* Inner spacing */
+    margin: 5px; /* Space around elements */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove default border */
+}
+
+/* Styling for the button */
+button {
+    background-color: #ff9800; /* Orange button background */
+    color: white; /* White text on button */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Current weather section styling */
+.current-weather {
+    margin-top: 20px; /* Space above the section */
+    font-size: 18px; /* Slightly larger text */
+}
+
+/* Title styling for the forecast section */
+.forecast-title {
+    text-align: center; /* Center the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Container for the forecast cards */
+.forecast-container {
+    display: flex; /* Arrange forecast cards side-by-side */
+    justify-content: center; /* Center cards horizontally */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 20px; /* Space above the forecast section */
+}
+
+/* Styling for individual forecast cards */
+.forecast-card {
+    background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Space inside each card */
+    margin: 10px; /* Space between cards */
+    width: 120px; /* Fixed card width */
+}

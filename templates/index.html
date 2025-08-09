@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Link to the CSS file stored in the 'static' folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Application Title -->
+        <h1>Weather App</h1>
+
+        <!-- Input field for city name -->
+        <input type="text" id="city" placeholder="Enter city name">
+
+        <!-- Button to trigger the weather data fetch -->
+        <button onclick="getWeather()">Get Weather</button>
+
+        <!-- Section to display current weather information -->
+        <div id="weather-result" class="current-weather"></div>
+
+        <!-- Section to display the 5-day forecast -->
+        <div id="forecast-result" class="forecast-container"></div>
+    </div>
+
+    <!-- Link to the JavaScript file stored in the 'static' folder -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
