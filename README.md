@@ -1,26 +1,40 @@
-# Weather App 🌤️
+# SkyCast 🌤️
 
-A simple Flask-based Weather App that displays **current weather** and a **5-day forecast** using the OpenWeatherMap API.
+**SkyCast** is a Flask-based, Dockerized weather application  
+that displays the **current weather** and a **5-day forecast** using the OpenWeatherMap API.
 
-## Features
-- 🌡️ Current temperature, humidity, wind speed, and pressure
-- 🌤️ Weather description with icons
-- 📅 5-day forecast
-- 📱 Responsive UI
-- 🔑 Environment variables for API key security
+## ✨ Features
+- 🌡 **Current temperature**, humidity, wind speed, and pressure
+- ☁ **Weather description** with icons
+- 📅 **5-day forecast**
+- 📱 **Responsive UI**
+- 🔑 **Environment variables** for secure API key storage
 
-## Installation (Python)
+---
+
+## 🛠 Technologies Used
+- [Flask](https://flask.palletsprojects.com/) – backend framework
+- [Docker](https://www.docker.com/) – containerization
+- [OpenWeatherMap API](https://openweathermap.org/api) – weather data
+- HTML, CSS, JavaScript – frontend
+
+---
+
+## 📦 Installation (Python)
+
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/weather-app.git
-cd weather-app
+git clone https://github.com/zsofiaviola/skycast-flask-docker.git
+cd skycast-flask-docker
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Create environment file and add your API key
+# Create .env file
 cp .env.example .env
-# Edit .env and set WEATHER_API_KEY=your_api_key_here
+
+# Edit the .env file and set your API key
+# WEATHER_API_KEY=your_api_key_here
 
 # Run the app
 python app.py
