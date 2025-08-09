@@ -64,8 +64,5 @@ docker run --env-file .env -p 5000:5000 skycast
 ```
 
 📌 Notes
-The .env file is ignored by Git (.gitignore) so your API key will not be uploaded to GitHub.
-
 Make sure you have a valid API key from OpenWeatherMap.
-
 The app runs on http://localhost:5000 by default.
